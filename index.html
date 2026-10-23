@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp | Miz0</title>
+    <link rel="stylesheet" href="./weather2-style.css">
+    <script src="https://kit.fontawesome.com/def137bef1.js" crossorigin="anonymous"></script>
+</head>
+<>
+    <div class="header">
+        <h1 class="text-gradient">Weather</h1>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <input class="input-area" type="text" placeholder="CityName">
+            <button class="btn" type="button">
+                <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="loading">検索中...</div>
+    
+        <section class="card">
+            <div class="main-info">
+                <div class="weather">
+                    <!-- <i id="weather-mark" class="fa-solid fa-sun"></i>
+                    <div>sunny</div> -->
+                </div>
+                <div class="weather-temperature">
+                    <div class="weather-title">気温</div>
+                    <div class="weather-value"></div>
+                    <div class="weather-sign">℃</div>
+                </div>
+
+            </div>
+            <div class="sub-info">
+                <ul>
+                    <li>
+                        <p>湿度</p>
+                        <span class="relative-humidity"></span>
+                        <div>%</div>
+                    </li>
+                    <li>
+                        <p>風速</p>
+                        <span class="wind-speed"></span>
+                        <div>km/h</div>
+                    </li>
+                    <li>
+                        <p>風向き</p>
+                        <span class="wind-direction"></span>
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </li>
+                    <li>
+                        <p>体感温度</p>
+                        <span class="apparent-temperature"></span>
+                        <div>℃</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

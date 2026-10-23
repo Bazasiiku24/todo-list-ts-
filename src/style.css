@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: #46bceb;
+  background: linear-gradient(180deg, rgba(70, 188, 235, 1) 26%, rgba(247, 242, 242, 1) 77%);
+  overflow: hidden;
+}
+
+.header{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2rem;
+  color: white;
+}
+
+.text-gradient {
+  /* Typography */
+  font-size: 100px;
+  font-weight: 900;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  /* Gradient Setup */
+  display: inline-block;
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(329deg, rgba(255, 132, 66, 1) 26%, rgba(214, 214, 214, 1) 49%, rgba(89, 247, 245, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: saturate(200%);
+
+}
+
+.container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form{
+  position:relative;
+  display: flex;
+}
+
+.input-area{
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 236, 252);
+  box-shadow: 0 0 10px rgb(1, 118, 138);
+}
+
+.btn{
+  position: absolute;
+  top: 50%;
+  right: -22%;
+  transform: translateY(-50%);
+  padding: 11px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 34, 73);
+}
+
+.btn:hover{
+  background-color: rgb(0, 19, 40);
+}
+
+.btn:active{
+  transform: translateY(-50%) scale(0.91);
+}
+
+#search-btn{
+  color: white;
+  font-size: 20px;
+}
+
+.loading{
+  display: none;
+}
+
+.card{
+  display: none;
+}
+
+.card.run{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  height: 400px;
+  display: flex;
+  border-radius: 20px;
+}
+
+
+.main-info{
+  width: 300px;
+  border-right: 3px solid rgba(89, 89, 89, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather-mark{
+  font-size: 6rem;
+}
+
+.weather{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather>div{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.weather-temperature{
+  border-top: 3px solid rgba(89, 89, 89, 0.5);;
+  padding: 10px;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.weather-title{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.weather-value{
+  font-size: 50px;
+}
+
+.sub-info{
+  width: 100%;
+}
+
+.sub-info>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.sub-info>ul>li{
+  display: block;
+  width: 93%;
+  margin-left: 12px;
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sub-info>ul>li>span{
+  font-size: 40px;
+}
